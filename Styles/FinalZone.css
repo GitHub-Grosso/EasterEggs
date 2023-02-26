@@ -1,0 +1,12 @@
+.final{
+    background-color: black;
+    height: 5vh;
+    width: 100vw;
+    margin: 0%;
+    margin-top: 9vw;
+    color: #fff;
+    font-family: 'Montserrat';
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

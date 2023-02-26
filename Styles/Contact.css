@@ -1,0 +1,199 @@
+#contact{
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact h1{
+    font-size: 5vw;
+    font-family: 'Montserrat';
+    margin: 0.5em;
+}
+
+.netCont div span{
+    font-weight: 600;
+    font-size: 2.5vw;
+    font-family: 'Montserrat';
+}
+
+#contact h2{
+    font-size: 3vw;
+    font-family: 'Inter';
+    font-weight: 1000;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+}
+
+input{
+    width: 60%;
+    height: 5vw;
+    margin-bottom: 1vw;
+    font-size: 2.5vw;
+    font-family: 'Inter';
+    border: none;
+    border-bottom: 0.25vw solid gray;
+    outline: 0px;
+    color: #000;
+    background: none;
+    z-index: 1;
+}
+
+input:focus + .ns::before{
+    width: 248%;
+    left: 0%;
+}
+input:focus + .ns{
+    color: rgba(120, 120, 120,0);
+}
+.ns{
+    font-size: 2.5vw;
+    color: rgba(120, 120, 120,1);
+    font-family: 'Inter';
+    position: absolute;
+    top: 9.7vw;
+    left: 20%;
+    pointer-events: none;
+    transition: all .5s;
+}
+
+.ns::before{
+    background: rgb(150,0,255);
+    background: linear-gradient(90deg, rgba(150,0,255,1) 0%, rgba(0,0,255,1) 50%, rgba(150,0,255,1) 100%);
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -45%;
+    left: 124%;
+    width: 0%;
+    height: 0.25vw;
+    z-index: 2;
+    transition: all .5s;
+}
+
+.netCont{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    border-bottom: 0.35vw solid black ;
+}
+
+.netCont div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    font-family: 'Inter';
+}
+
+.Mail img{
+    width: 75%;    
+    margin: 1vw 0px;
+}
+
+.WhatsApp img{
+    width: 50%;    
+    margin: 1vw 0px;
+}
+
+.Instagram img{
+    width: 55%;    
+    margin: 1vw 0px;
+}
+.Telegram img{
+    width: 60%;    
+    margin: 1vw 0px;
+}
+
+input:focus + .msg::before{
+    width: 576%;
+    left: 0%;
+    
+}
+
+input:focus + .msg{
+    color: rgba(120, 120, 120,0);
+}
+
+.msg{
+    font-size: 2.5vw;
+    color: rgba(120, 120, 120,1);
+    font-family: 'Inter';
+    position: absolute;
+    top: 16.7vw;
+    left: 20%;
+    pointer-events: none;
+    transition: all .3s;
+}
+
+.msg::before{
+    background: rgb(150,0,255);
+    background: linear-gradient(90deg, rgba(150,0,255,1) 0%, rgba(0,0,255,1) 50%, rgba(150,0,255,1) 100%);
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -25%;
+    left: 288%;
+    width: 0;
+    height: 0.25vw;
+    z-index: 2;
+    opacity: 100%;
+    transition: all .3s;
+}
+
+.contact button{
+    width: 20%;
+    font-weight: 600;
+    font-size: 2.4vw;
+    font-family: 'Montserrat';
+    color: #fff;
+    height: 6vw;
+    background-color: #000;
+    border-radius: 3vw 5vw 3vw 5vw;
+    margin: 0%;
+    margin-top: 3vw;
+    transition: all .4s ease-in-out;
+    position: relative;
+}
+
+.contact button b{
+    color: rgba(255, 255, 255, 0);
+    transition: all .4s ease-in-out;
+    position: absolute;
+    top:35%;
+    left: 45%;
+    font-size: 10px;
+}
+
+.contact button:hover{
+    color: #000000;
+    background-color: #e0e0e0;
+   
+}
+
+.contact button:focus{
+    border-radius: 5vw 5vw 5vw 5vw;
+    width: 6vw;
+    background-color: green;
+   
+}
+
+.contact button:focus span{
+    color: rgba(255, 255, 255,0);
+}
+
+.contact button:focus b{
+    color: rgba(255, 255, 255,1);
+    font-size:2.5vw;
+    top:20%;
+    left: 35%;
+}

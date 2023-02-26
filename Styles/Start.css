@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+:root{
+    --navColor: #323232;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    user-select: none;
+    
+}
+
+.titles{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+    position: relative;
+    top: 20vh;
+}
+
+.logo{
+    perspective: 500px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img{
+    animation-name: logo;
+    width: 50%;
+    margin-top: 20px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transition: all .5s;
+}
+
+.title{
+    position: relative;
+    margin: 0px;
+    color: white;
+    font-size: 6vw;
+    font-family: 'Montserrat';
+    height: fit-content;
+}
+
+#startSection{
+    height: 100vh;
+    width: 100vw;
+     background-color: black;
+}
+.frase{
+    position: relative;
+    color: white;
+    font-size: 5vw;
+    font-family: 'Inter';
+    font-weight:600;
+    margin: 0px 1em 0px 0px;
+    height: fit-content;
+   
+}
+
+.frase small{
+    position: relative;
+    color: white;
+    font-size: 2.5vw;
+    font-family: 'Inter';
+    font-weight: 100;
+    margin: 0;
+    height: fit-content;
+    top: 5vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--navColor);
+    height: 12vh;
+    align-items: center;
+}
+
+.navbar a{
+    margin: 0%;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.navbar div button{  
+    padding: 0;
+    background: none;
+    border: none;
+    position: relative;
+  
+}
+
+.navbar div button a{
+    font-family: 'Montserrat';
+    font-size: 2vw;
+    font-weight: 600;
+    color: white;
+    padding: 1vw 1vw;
+}
+
+.navbar div button::before{
+    display: block;
+    position: absolute;
+    left:50%;
+    content: "";
+    background: rgb(209,133,255);
+    background: linear-gradient(90deg, rgba(209,133,255,1) 0%, rgba(132,211,255,1) 52%, rgba(255,255,255,1) 100%);width: 0%;
+    height: .5vh;
+    bottom: -10%;
+    transition: all .3s;
+}
+
+.navbar div button::after{
+    display: block;
+    position: absolute;
+    left:50%;
+    content: "";
+    background: rgb(209,133,255);
+    background: linear-gradient(90deg, rgba(209,133,255,1) 0%, rgba(132,211,255,1) 52%, rgba(255,255,255,1) 100%);width: 0%;
+    height: .5vh;
+    top: -10%;
+    transition: all .3s;
+}
+
+.navbar div:hover button::before{   
+    left: 7.5%;
+    width: 85%;
+}
+.navbar div:hover button::after{   
+    left: 7.5%;
+    width: 85%;
+}
+
+
+@keyframes logo{
+    0%{
+        translate: 0px -15px;
+    }
+    50%{
+        translate: 0px 15px;
+    }
+    100%{
+        translate: 0px -15px;
+    }
+}

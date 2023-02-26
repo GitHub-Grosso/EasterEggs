@@ -1,0 +1,42 @@
+#comingsoon{
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#comingsoon h1{
+    font-size: 6vw;
+    font-family: 'Montserrat';
+}
+
+.comingsoonCont{
+    display: flex;
+    flex-direction: row;
+}
+
+.cardCS{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(10, 10, 10, 0);
+    height: fit-content;
+    padding: 5vw 2vw 0vw 2vw;
+    border-radius: 1vw;
+    background: rgb(10,10,10);
+    margin: 0px 2vw;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 10px 0px rgb(100, 100, 100);
+}
+.cardCS span{
+    font-size: 3vw;
+    font-family: 'Inter';
+    margin: 5vw 0px;   
+}
+
+.cardCS img{
+    width: 40%; 
+}
